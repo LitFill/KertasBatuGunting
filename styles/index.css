@@ -1,16 +1,17 @@
 body {
     background-color: #191919;
     color: white;
-    font-family: Arial
+    font-family: Arial;
+    text-align: center;
 }
 
 .judul {
     font-size: 30px;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .ikon-pilihan {
-    height: 50px
+    height: 50px;
 }
 
 .tombol-pilihan {
@@ -20,26 +21,58 @@ body {
     height: 100px;
     border-radius: 50px;
     margin-right: 10px;
-    cursor: pointer
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.tombol-pilihan:hover {
+    border-color: #ff08;
+}
+
+.tombol-pilihan:active {
+    background-color: #ff08;
+    border: 3px solid transparent;
 }
 
 .hasil {
     font-size: 25px;
     font-weight: bold;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .skor {
-    margin-top: 60px
+    margin-top: 60px;
 }
 
 .tombol-konfirmasi,
 .tombol-reset,
-.tombol-auto{
+.tombol-auto {
     background-color: white;
     border: 0;
     font-size: 15px;
     padding: 8px 15px;
     cursor: pointer;
     border-radius: 50px;
+    transition: opacity 0.2s ease;
+}
+
+.tombol-konfirmasi:hover,
+.tombol-reset:hover,
+.tombol-auto:hover {
+    opacity: 0.8;
+}
+
+.tombol-konfirmasi:active,
+.tombol-reset:active,
+.tombol-auto:active {
+    color: #fff;
+    background-color: #000;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
