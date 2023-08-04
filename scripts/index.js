@@ -64,9 +64,16 @@ function perbaruiElemenPilihan(pilihanPemain, pilihanKomputer) {
     } else {
         plhkmp = "scissors";
     }
-    document.querySelector(
-        ".js-pilihan"
-    ).innerHTML = `Kamu memilih: <img class="ikon-pilihan" src="images/${plhnpmn}-emoji.png"><br>Komputer memilih: <img class="ikon-pilihan" src="images/${plhkmp}-emoji.png"><br><br><img class="ikon-pilihan" src="images/${plhnpmn}-emoji.png">vs<img class="ikon-pilihan" src="images/${plhkmp}-emoji.png">`;
+    document.querySelector(".js-pilihan").innerHTML = `
+        Kamu memilih: <img class="ikon-pilihan" src="images/${plhnpmn}-emoji.png">
+        <br>
+        Komputer memilih: <img class="ikon-pilihan" src="images/${plhkmp}-emoji.png">
+        <br>
+        <br>
+        <img class="ikon-pilihan" src="images/${plhnpmn}-emoji.png">
+        vs
+        <img class="ikon-pilihan" src="images/${plhkmp}-emoji.png">
+        `;
 }
 
 function perbaruiElemenHasil(hasil) {
